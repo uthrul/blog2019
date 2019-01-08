@@ -1,35 +1,39 @@
 <div class="wrapper wrapper_padding clearfix">
-        <div class="col-1 about homepage_content">
-            <h2>About</h2>
-            <hr>
-            <p>Hello , My name Saud Maruli Sihombing.</p> 
-            <p>I’m web and mobile developer living in indonesia - Jakarta.</p>
-            <p>By day i work a front-end dev at slimdev. by night i teach to design my game.</p>
-            <p>You can find me speaking in 140 character on Twitter and sharing on Github.</p>
-            
-            <a class="twitter-timeline" href="https://twitter.com/sauthrully?ref_src=twsrc%5Etfw">
-                Tweets by sauthrully
-            </a> 
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="col-1 about homepage_content">
+        <h2>About</h2>
+        <hr>
+        <p>Hello , My name Saud Maruli Sihombing.</p> 
+        <p>I’m Bad Developers living in Indonesia - Jakarta.</p>
+        <p>
+            I'm not a real programmer, 
+            I just the Hero copy paste a programmer and 
+            duplicate or cloning project.
+        </p>
+        <p>You can find me speaking in 140 character on Twitter and sharing on Github.</p>
         
-        </div>
-        <div class="col-2 homepage_content">
-            <h2>Stuff I've Written</h2>
-            <hr>
-
-            <% @posts.each do |post|%>
-                <h3><a href="#"><%= link_to post.title, post %></a></h3></h3>
-                <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-            <% end %>
-        </div>
-
-        <div class="col-3 homepage_content">
-            <h2>Stuff I've Built</h2>
-            <hr>
-            <% @projects.each do |project| %>
-                <h3><a href="#"><%= link_to project.title, project %></a></h3>
-                <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
-            <% end %>
-	    </div>
-        
+        <a class="twitter-timeline" href="https://twitter.com/sauthrully?ref_src=twsrc%5Etfw">
+            Tweets by sauthrully
+        </a> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
     </div>
+    <div class="col-2 homepage_content">
+        <h2>Stuff I've Written</h2>
+        <hr>
+
+        <% @posts.each do |post|%>
+            <h3><a href="#"><%= link_to post.title, post %></a></h3></h3>
+            <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+        <% end %>
+    </div>
+
+    <div class="col-3 homepage_content">
+        <h2>Stuff I've Built</h2>
+        <hr>
+        <% @projects.each do |project| %>
+            <h3><a href="#"><%= link_to project.title, project %></a></h3>
+            <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+        <% end %>
+    </div>
+    
+</div>
