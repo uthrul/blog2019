@@ -16,5 +16,5 @@ share examples of my work, and have people contact us.
         - Sendgrid
     -User (Devise)
     
-    # test App
-    https://codinghood.herokuapp.com/
+   # Test App
+   https://codinghood.herokuapp.com/
